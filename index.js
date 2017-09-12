@@ -1,15 +1,16 @@
-import fs from 'fs';
-import path from 'path';
-import util from 'util';
-import childProcess from 'child_process';
-import cfonts from 'cfonts';
-import inquirer from 'inquirer';
-import inquirerHelpers from 'inquirer-helpers';
-import inquirerAutocompletePrompt from 'inquirer-autocomplete-prompt';
-import { distanceInWordsStrict, format } from 'date-fns';
-import formatDuration from 'format-duration';
-import commandExists from 'command-exists';
-import { getChannelId, getChannelVods } from './mixerapi';
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+const util = require('util');
+const childProcess = require('child_process');
+const cfonts = require('cfonts');
+const inquirer = require('inquirer');
+const inquirerHelpers = require('inquirer-helpers').default;
+const inquirerAutocompletePrompt = require('inquirer-autocomplete-prompt');
+const { distanceInWordsStrict, format } = require('date-fns');
+const formatDuration = require('format-duration');
+const commandExists = require('command-exists');
+const { getChannelId, getChannelVods } = require('./mixerapi');
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);

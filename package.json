@@ -3,12 +3,12 @@
   "description": "cli tool to list and watch VODs from mixer.com using streamlink",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "node -r @std/esm ./index.js"
+  "bin": {
+    "mixer-vods": "./index.js",
+    "mvod": "./index.js"
   },
-  "@std/esm": {
-    "esm": "all",
-    "cjs": true
+  "scripts": {
+    "start": "node ./index.js"
   },
   "engines": {
     "node": ">=8.2.1"
@@ -35,7 +35,6 @@
     "eslint-plugin-import": "^2.7.0"
   },
   "dependencies": {
-    "@std/esm": "^0.7.1",
     "cfonts": "^1.1.3",
     "command-exists": "^1.2.2",
     "date-fns": "^1.28.5",

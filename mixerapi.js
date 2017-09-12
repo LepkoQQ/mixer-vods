@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
 const ENDPOINT = 'https://mixer.com/api/v1';
 
@@ -11,7 +11,7 @@ const getChannelVods = id =>
   fetch(`${ENDPOINT}/recordings?where=channelId:eq:${id}&order=createdAt:DESC`)
     .then(response => response.json());
 
-export {
+module.exports = {
   getChannelId,
   getChannelVods,
 };
