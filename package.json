@@ -28,6 +28,7 @@
   ],
   "author": "LepkoQQ",
   "license": "MIT",
+  "repository": "LepkoQQ/mixer-vods",
   "devDependencies": {
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
