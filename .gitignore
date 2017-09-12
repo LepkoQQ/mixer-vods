@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# @std/esm
+.esm-cache/
+
+# generated cache files
+usernames.json

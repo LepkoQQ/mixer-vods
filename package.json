@@ -1,0 +1,47 @@
+{
+  "name": "mixer-vods",
+  "description": "cli tool to list and watch VODs from mixer.com using streamlink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r @std/esm ./index.js"
+  },
+  "@std/esm": {
+    "esm": "all",
+    "cjs": true
+  },
+  "engines": {
+    "node": ">=8.2.1"
+  },
+  "keywords": [
+    "cli",
+    "mixer",
+    "mixer.com",
+    "beam",
+    "beam.pro",
+    "vod",
+    "vods",
+    "stream",
+    "streamlink",
+    "livestreamer",
+    "vlc"
+  ],
+  "author": "LepkoQQ",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "@std/esm": "^0.7.1",
+    "cfonts": "^1.1.3",
+    "command-exists": "^1.2.2",
+    "date-fns": "^1.28.5",
+    "format-duration": "^1.0.0",
+    "inquirer": "^3.2.3",
+    "inquirer-autocomplete-prompt": "^0.11.1",
+    "inquirer-helpers": "^1.2.0",
+    "node-fetch": "^1.7.3"
+  }
+}
