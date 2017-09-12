@@ -1,7 +1,7 @@
 {
   "name": "mixer-vods",
   "description": "cli tool to list and watch VODs from mixer.com using streamlink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "bin": {
     "mixer-vods": "./index.js",
